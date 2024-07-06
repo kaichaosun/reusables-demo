@@ -25,6 +25,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import "./global.css";
+import { Label } from './components/ui/label';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -69,11 +70,10 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView>
-        <Text className='bg-yellow-300'>Hello</Text>
+      <ScrollView className='bg-green-300'>
+        <Text className='text-lg'>Hello</Text>
         <Text>Hello</Text>
-        <Text>Hello</Text>
-        <Text>Hello</Text>
+        <Label nativeID='demohh' className='text-lg'>just</Label>
       </ScrollView>
     </SafeAreaView>
   );
